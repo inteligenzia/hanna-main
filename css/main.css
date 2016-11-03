@@ -1,0 +1,178 @@
+
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.contact-form {
+    height: 1000px;
+}
+
+/*==========
+swiper + navigantion
+*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container-vertical>.swiper-pagination-bullets {
+    font-size: 18px;
+    right: 40px;
+}
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 20px 0;
+}
+
+.swiper-pagination-bullet {
+    color: #666666;
+    border-radius: 0;
+}
+
+.swiper-pagination-bullet-active{
+    color: #C1955D;
+    background: none;
+}
+
+.swiper-pagination-bullet-active::before{
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 50px;
+    background-color: #C0945C;
+    position: relative;
+    top: 13px;
+    left: -61px;
+}
+
+
+
+/*=========
+slider-images begin
+=====*/
+
+.sl1 {
+    background-image: url("../img/hslide1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.sl2 {
+    background-image: url("../img/hslide2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.sl3 {
+    background-image: url("../img/hslide3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/*=========
+ slider-images end
+=====*/
+.navbar {
+    background-color: #000;
+    background-image: none;
+}
+
+.navbar-default {
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.navbar-inverse .navbar-brand {
+    text-transform: uppercase;
+    font-family: "Onyx", "Times New Roman", "serif";
+    font-size: 42px;
+    color: #fff;
+    text-shadow: none;
+    line-height: 40px;
+}
+.nav-main-centered ul {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+}
+
+.navbar-nav>li>a {
+    line-height: 40px;
+    font-family: 'montserrathairline', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/*Set sticky menu position after scroll */
+#sticky.affix, #sticky.affix-bottom{
+     position: fixed;
+     top: 0;
+     z-index:10;
+     width: 100%;
+ }
+
+/*Fix menu after resize */
+#sticky.affix-bottom {
+    top: 0 !important;
+}
+
+/*Slider menu styles should be below main menu because slider menu uses some main menu styles */
+.nav-slider {
+    margin-top: -90px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    z-index: 2; /*push over slide*/
+}
+
+.nav-slider-centered ul {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+}
+
+.art-header {
+    font-family: "Onyx", "Times New Roman", "serif";
+    font-size: 68px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 60px 0 45px 0;
+}
+
+
+.art-header::before, .art-header::after {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 105px;
+    background-color: #C0945C;
+    position: relative;
+}
+
+.art-header::before {
+    top: 38px;
+    left: 410px;
+}
+
+.art-header::after {
+    top: -38px;
+    left: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

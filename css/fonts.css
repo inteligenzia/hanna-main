@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Onyx";
+    src: url("../fonts/onyx.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'montserrathairline';
+    src: url('../fonts/montserrat-hairline-webfont.woff2') format('woff2'),
+    url('../fonts/montserrat-hairline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
