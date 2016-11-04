@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
     var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
@@ -14,8 +11,6 @@ $(document).ready(function() {
             return '<span class="swiper-pagination-bullet"> 0' + (className + 1) + '.</span>';
         },
         onlyExternal: true
-
-
     });
     
     //calculate when sticky menu should appear
@@ -32,13 +27,27 @@ $(window).on("resize", function(){
 
 //Show or hide slider menu on desktop
 $(window).scroll(function() {
-    if ($(window).width() > 1359){
+    if ($(window).width() > 1340){
         if ($(this).scrollTop() > 80) {
-            $('.nav-slider').fadeOut( "slow" );
+            $('.nav-slider').fadeOut("slow");
         } else {
-            $('.nav-slider').fadeIn( "slow" );
+            $('.nav-slider').fadeIn("slow");
         }
     }
 });
+
+$("#hamburger").click(function() {
+    $("#mobile-menu").css("width", "100%");
+    $("#sticky").fadeOut("fast");
+});
+
+$("#mobile-close").click(function() {
+    $("#mobile-menu").css("width", "0%");
+    $("#sticky").fadeIn("fast" );
+});
+
+
+
+
 
 

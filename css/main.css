@@ -35,7 +35,7 @@ swiper + navigantion
 }
 
 .swiper-pagination-bullet-active{
-    color: #C1955D;
+    color: #c0945c;
     background: none;
 }
 
@@ -44,7 +44,7 @@ swiper + navigantion
     display: block;
     height: 2px;
     width: 50px;
-    background-color: #C0945C;
+    background-color: #c0945c;
     position: relative;
     top: 13px;
     left: -61px;
@@ -109,9 +109,25 @@ slider-images begin
     font-family: 'montserrathairline', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
+    color: #8B8B8B;
 }
 
-/*Set sticky menu position after scroll */
+.navbar-nav>li>a.menu-active {
+    color: #fff;
+    border-bottom: 2px solid #c0945c;
+    margin: 0 15px;
+    padding: 15px 0 0 0;
+}
+
+#lang-select a {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+#lang-select .glyphicon-menu-down {
+    font-size: 10px;
+}
+
+    /*Set sticky menu position after scroll */
 #sticky.affix, #sticky.affix-bottom{
      position: fixed;
      top: 0;
@@ -141,7 +157,7 @@ slider-images begin
     margin: 60px 0 45px 0;
 }
 
-
+/*
 .art-header::before, .art-header::after {
     content: " ";
     display: block;
@@ -160,6 +176,7 @@ slider-images begin
     top: -38px;
     left: 600px;
 }
+---------------------------------*/
 
 
 
