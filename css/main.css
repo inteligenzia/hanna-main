@@ -92,10 +92,16 @@ slider-images begin
     text-shadow: none;
     line-height: 40px;
 }
-.nav-main-centered ul {
-    width: 90%;
+.nav-main-centered ul, .nav-slider-centered ul {
+    text-align: center;
+    width: 100%;
     float: none;
     margin: 0 auto;
+}
+
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
 }
 
 .navbar-nav>li>a {
@@ -123,13 +129,7 @@ slider-images begin
     margin-top: -90px;
     background-color: rgba(0,0,0,0);
     border: none;
-    z-index: 2; /*push over slide*/
-}
-
-.nav-slider-centered ul {
-    width: 90%;
-    float: none;
-    margin: 0 auto;
+    z-index: 2; /*push above slider*/
 }
 
 .art-header {

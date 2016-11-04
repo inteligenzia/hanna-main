@@ -1,0 +1,20 @@
+@media  (min-width: 1360px) {
+    .nav-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1359px) {
+    .nav-slider, .nav-main-centered {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .glyphicon-menu-hamburger {
+        color: red;
+    }
+}
+
