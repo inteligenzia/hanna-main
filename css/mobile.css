@@ -6,13 +6,18 @@
 
 @media (max-width: 460px) {
     .navbar-inverse .navbar-brand {
-        font-size: 24px;
+        font-size: 23px;
+        line-height: 50px;
     }
     #sticky .col-xs-8 {
         width: 64%;
     }
     #sticky > .container-fluid > .col-xs-8 > a {
-        margin-left: 8%;
+        margin-left: 7%;
+    }
+
+    #hamburger {
+        line-height: 76px;
     }
 
 }
@@ -34,7 +39,21 @@
 
 }
 
-/* The Overlay (background) */
+@media (max-width: 991px) {
+    .art-header::before, .art-header::after {
+        width: 75px;
+    }
+    .art-header::before {
+        left: -1.5em;
+    }
+    .art-header::after {
+        right: -1.5em;
+    }
+}
+
+
+
+/* ------  Mobile Menu (background) ----*/
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
@@ -52,21 +71,23 @@
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 15%; /* 25% from the top */
+    height: 87%;
+    top: 10%; /* 10% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    margin-top: 5%; /* top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
 .overlay .mobile-menu-link, .overlay .mobile-social a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 28px;
     color: #F1D8B9;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
+
 .overlay .mobile-social a {
     line-height: 80px;
     display: inline;
@@ -82,12 +103,14 @@
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: -12px;
+    left: 19px;
     font-size: 60px;
 }
 
 .mobile-social {
+    position: absolute;
+    bottom: 0px;
     height: 80px;
     border-top: solid 5px #D3AA75;
     width: 100%;

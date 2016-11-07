@@ -149,34 +149,48 @@ slider-images begin
 }
 
 .art-header {
+    width: 30%;
     font-family: "Onyx", "Times New Roman", "serif";
     font-size: 68px;
     color: #000;
     text-transform: uppercase;
     text-align: center;
-    margin: 60px 0 45px 0;
+    margin: 60px auto 45px;
+    position: relative;
 }
 
-/*
 .art-header::before, .art-header::after {
-    content: " ";
+    content: "";
     display: block;
     height: 2px;
     width: 105px;
     background-color: #C0945C;
-    position: relative;
+    position: absolute;
+    z-index: -1;
+    bottom: 0.5em;
 }
 
 .art-header::before {
-    top: 38px;
-    left: 410px;
+    left: -0.5em;
 }
 
 .art-header::after {
-    top: -38px;
-    left: 600px;
+    right: -0.5em;
 }
----------------------------------*/
+
+.featured-entry{
+    margin-bottom: 75px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+}
+
+.full-width-wrapper {
+    width: 100%;
+    background-color: lightslategray;
+}
 
 
 
