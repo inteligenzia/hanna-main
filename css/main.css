@@ -247,12 +247,17 @@ slider-images begin
     left: 135px;
 }
 
+.news-article {
+    margin-bottom: 20px;
+}
+
 .news-img-wrapper {
     width: 100%;
     height: 250%;
     overflow: hidden;
     margin-bottom: 25px;
 }
+
 
 .news-img {
     width: 100%;
