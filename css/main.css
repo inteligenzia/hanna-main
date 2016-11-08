@@ -50,8 +50,6 @@ swiper + navigantion
     left: -61px;
 }
 
-
-
 /*=========
 slider-images begin
 =====*/
@@ -291,8 +289,20 @@ slider-images begin
     background-size: cover;
 }
 
+.wrap-about-me > .container {
+    padding-bottom: 120px;
+}
 
+.row-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 
+.about-photo {
+    background-image: url("../img/ab-left.jpg");
+    background-size: cover;
+    height: 720px;
+}
 
 
 
