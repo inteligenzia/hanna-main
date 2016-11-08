@@ -163,6 +163,10 @@ slider-images begin
     position: relative;
 }
 
+.art-alt {
+    color: #fff;
+}
+
 .art-header::before, .art-header::after {
     content: "";
     display: block;
@@ -170,7 +174,7 @@ slider-images begin
     width: 105px;
     background-color: #C0945C;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     bottom: 0.5em;
 }
 
@@ -280,6 +284,11 @@ slider-images begin
     background-color: #C0945C;
     color:  #efefef;
     text-decoration: none;
+}
+
+.wrap-about-me {
+    background-image: url("../img/ab-bg.jpg");
+    background-size: cover;
 }
 
 
