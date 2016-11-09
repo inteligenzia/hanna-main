@@ -4,25 +4,15 @@
     line-height: 70px;
 }
 
+
 @media  (min-width: 1010px) {
     .mobile-button {
         display: none;
     }
 }
 
-@media (max-width: 767px) {
-    #lang-select a {
-        text-align: end;
-        background-color: rgba(0,0,0,0);
-    }
-
-    .menu-right-part {
-        padding-top: 5px;
-    }
-}
-
 @media (max-width: 1010px) {
-    .menu-center-part {
+    .menu-center-part, .menu-slider {
         display: none;
     }
     .site-logo {
@@ -39,7 +29,6 @@
         float: left;
         display: block;
     }
-
 }
 
 @media (max-width: 991px) {

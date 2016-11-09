@@ -93,6 +93,7 @@ slider-images begin
 
 .site-logo {
     line-height: 70px;
+    margin-left: 10px;
 }
 
 .site-logo img {
@@ -108,7 +109,13 @@ slider-images begin
     margin: 0;
 }
 
-.menu-center-part li {
+.menu-slider {
+    width: 70%;
+    text-align: center;
+    margin:  0 auto;
+}
+
+.menu-center-part li, .menu-slider li {
     display: inline;
     line-height: 70px;
 }
@@ -127,6 +134,7 @@ slider-images begin
 #lang-select a {
     text-transform: capitalize;
     font-size: 14px;
+    line-height: 40px
 }
 #lang-select .glyphicon-menu-down {
     font-size: 10px;
@@ -136,35 +144,7 @@ slider-images begin
     left: -89px;
 }
 
-
-.nav-slider-centered ul {
-    text-align: center;
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-}
-
-.navbar-nav>li {
-    float: none;
-    display: inline-block;
-}
-
-.navbar-nav>li>a {
-    line-height: 40px;
-    font-family: 'montserrathairline', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #8B8B8B;
-}
-
-.navbar-nav>li>a.menu-active {
-    color: #fff;
-    border-bottom: 2px solid #c0945c;
-    margin: 0 15px;
-    padding: 15px 0 0 0;
-}
-
-.menu-center-part>li>a {
+.menu-slider>li>a, .menu-center-part>li>a {
     font-family: 'montserrathairline', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -172,7 +152,7 @@ slider-images begin
     margin: 0 15px;
 }
 
-.menu-center-part>li>a:hover {
+.menu-slider>li>a:hover, .menu-center-part>li>a:hover {
     color: #fff;
     text-decoration: none;
 }
@@ -183,8 +163,7 @@ slider-images begin
 
 }
 
-
-    /*Set sticky menu position after scroll */
+/*Set sticky menu position after scroll */
 #sticky.affix, #sticky.affix-bottom{
      position: fixed;
      top: 0;
@@ -199,7 +178,7 @@ slider-images begin
 
 /*Slider menu styles should be below main menu because slider menu uses some main menu styles */
 .nav-slider {
-    margin-top: -90px;
+    margin-top: -91px;
     background-color: rgba(0,0,0,0);
     border: none;
     z-index: 2; /*push above slider*/
