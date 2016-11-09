@@ -4,36 +4,39 @@
     line-height: 70px;
 }
 
-@media (max-width: 460px) {
-    .navbar-inverse .navbar-brand {
-        font-size: 23px;
-        line-height: 50px;
-    }
-    #sticky .col-xs-8 {
-        width: 64%;
-    }
-    #sticky > .container-fluid > .col-xs-8 > a {
-        margin-left: 7%;
-    }
-
-    #hamburger {
-        line-height: 76px;
-    }
-
-}
-
-@media  (min-width: 200px) {
+@media  (min-width: 1010px) {
     .mobile-button {
         display: none;
     }
 }
 
-@media (max-width: 200px) {
-    .nav-slider, .nav-main-centered {
-        display: none;
+@media (max-width: 767px) {
+    #lang-select a {
+        text-align: end;
+        background-color: rgba(0,0,0,0);
     }
 
-    .nav-mobile {
+    .menu-right-part {
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .menu-center-part {
+        display: none;
+    }
+    .site-logo {
+        margin: 0 auto;
+        display: block;
+        width: 30%;
+    }
+    .menu-left-part {
+        width: 70%;
+    }
+
+    .mobile-button {
+        width: 15%;
+        float: left;
         display: block;
     }
 
