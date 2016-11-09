@@ -82,6 +82,50 @@ slider-images begin
     border-radius: 0;
 }
 
+.menu-wrapper{
+    width: 100%;
+}
+
+.menu-left-part {
+    float: left;
+    width: 15%;
+}
+
+.site-logo {
+    line-height: 70px;
+}
+
+.site-logo img {
+    width: 200px;
+    height: auto;
+
+}
+
+.menu-center-part {
+    float: left;
+    width: 70%;
+    text-align: center;
+    margin: 0;
+}
+
+.menu-center-part li {
+    display: inline;
+    line-height: 70px;
+}
+
+.menu-right-part {
+    float: right;
+    width: 15%;
+    line-height: 70px;
+    margin: 0;
+}
+
+.menu-right-part li {
+    float: right;
+}
+
+
+
 .navbar-inverse .navbar-brand {
     text-transform: uppercase;
     font-family: "Onyx", "Times New Roman", "serif";
