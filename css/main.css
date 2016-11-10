@@ -184,7 +184,24 @@ slider-images begin
     z-index: 2; /*push above slider*/
 }
 
-.container-news {
+.language-switcher-locale-url {
+    padding-right: 20px;
+    margin: 0;
+}
+
+
+.language-switcher-locale-url li {
+    list-style: none;
+    text-align: right;
+    line-height: 70px;
+}
+
+.language-switcher-locale-url li.en {
+    display: none;
+    position: absolute;
+}
+
+.view-id-news_main {
     margin-bottom: 70px;
 }
 
@@ -355,7 +372,7 @@ slider-images begin
 }
 
 
-.about-description h1 {
+.about-description h3 {
     font-size: 48px;
     font-family: "Onyx", "Times New Roman", "serif";
     color: #C0945C;

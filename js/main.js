@@ -46,6 +46,11 @@ jQuery(document).ready(function($) {
         $("#mobile-menu").css("width", "0%");
         $("#sticky").fadeIn("fast" );
     });
+
+    $(".ru a").click(function(event) {
+        event.preventDefault();
+        $("en").css("display", "block");
+    });
 });
 
 
