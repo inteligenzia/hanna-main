@@ -47,10 +47,19 @@ jQuery(document).ready(function($) {
         $("#sticky").fadeIn("fast" );
     });
 
-    $(".ru a").click(function(event) {
+    $("ul.language-switcher-locale-url li.active").click(function(event) {
         event.preventDefault();
-        $("en").css("display", "block");
-    });
+        $(this).find("a").css("text-decoration", "none");
+
+        var lang = $("ul.language-switcher-locale-url li:not(.active)");
+
+        if ( $(lang).css("display") == "none" ) {
+            $(lang).css("display", "block");
+        } else {
+            $(lang).css("display", "none");
+        }
+
+     });
 });
 
 
