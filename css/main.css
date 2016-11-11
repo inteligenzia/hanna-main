@@ -196,6 +196,8 @@ slider-images begin
     list-style: none;
     text-align: right;
     line-height: 70px;
+
+
 }
 
 .language-switcher-locale-url li.active a:after {
@@ -212,6 +214,8 @@ slider-images begin
     padding: 0 20px;
     right: -1px;
     display: none;
+
+
 }
 
 .language-switcher-locale-url li a {

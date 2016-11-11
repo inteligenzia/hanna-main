@@ -47,6 +47,12 @@ jQuery(document).ready(function($) {
         $("#sticky").fadeIn("fast" );
     });
 
+    $(document).on('click', function (e) {
+        if ($(e.target).closest("ul.language-switcher-locale-url").length === 0) {
+            $("ul.language-switcher-locale-url li:not(.active)").fadeOut("fast");
+        }
+    });
+
     $("ul.language-switcher-locale-url li.active").click(function(event) {
         event.preventDefault();
         $(this).find("a").css("text-decoration", "none");
@@ -54,9 +60,9 @@ jQuery(document).ready(function($) {
         var lang = $("ul.language-switcher-locale-url li:not(.active)");
 
         if ( $(lang).css("display") == "none" ) {
-            $(lang).css("display", "block");
+            $(lang).fadeIn("fast");
         } else {
-            $(lang).css("display", "none");
+            $(lang).fadeOut("fast");
         }
 
      });
