@@ -10,6 +10,20 @@
     }
 }
 
+@media (max-width: 400px) {
+    .about-description {
+        height: 745px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-description {
+        height: 745px;
+    }
+}
+
+
+
 @media  (min-width: 1010px) {
     .mobile-button {
         display: none;
@@ -23,16 +37,21 @@
     .site-logo {
         margin: 0 auto;
         display: block;
-        width: 30%;
+        width: 75%;
     }
     .menu-left-part {
-        width: 70%;
+        width: 60%;
+    }
+
+    .menu-right-part {
+        width: 20%;
     }
 
     .mobile-button {
-        width: 15%;
+        width: 20%;
         float: left;
         display: block;
+        padding-left: 20px;
     }
 }
 
@@ -100,8 +119,8 @@
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    top: -12px;
-    left: 19px;
+    top: -16px;
+    left: 9px;
     font-size: 60px;
 }
 

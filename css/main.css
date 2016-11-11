@@ -173,7 +173,7 @@ slider-images begin
 
 /*Fix menu after resize */
 #sticky.affix-bottom {
-    top: 0 !important;
+    top: 0;
 }
 
 /*Slider menu styles should be below main menu because slider menu uses some main menu styles */
@@ -190,14 +190,10 @@ slider-images begin
 }
 
 
-
-
 .language-switcher-locale-url li {
     list-style: none;
     text-align: right;
     line-height: 70px;
-
-
 }
 
 .language-switcher-locale-url li.active a:after {
@@ -416,15 +412,15 @@ slider-images begin
     background-color: #949494;
     position: absolute;
     z-index: 1;
-    bottom: 416px;
+    bottom: 23em;
 }
 
 .art-soprano::before {
-    left: 139px;
+    left: 8em;
 }
 
 .art-soprano::after {
-    right: 139px;
+    right: 8em;
 }
 
 
