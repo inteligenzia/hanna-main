@@ -17,7 +17,7 @@ body {
 /*==========
 swiper + navigantion
 */
-.swiper-container {
+.top-swiper {
     width: 100%;
     height: 100%;
 }
@@ -266,10 +266,14 @@ slider-images begin
 
 .featured-image {
     margin-bottom: 25px;
+    overflow: hidden;
 }
-.featured-image img {
-    width: 100%;
-    height: auto;
+
+.featured-image a {
+    display: block;
+    padding: 80px 0 0 80px;
+    background-image: url("../img/top-article-bg.png");
+    background-repeat: no-repeat;
 }
 
 .full-width-wrapper {
@@ -429,11 +433,7 @@ slider-images begin
 }
 
 .pc-preview {
-    margin: 0 auto;
-    background-image: url("../img/media-pc.png");
-    background-size: auto 500px;
-    width: 1218px;
-    height: 659px;
+
 }
 
 

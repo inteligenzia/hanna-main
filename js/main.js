@@ -1,10 +1,10 @@
 jQuery(document).ready(function($) {
     $(document).ready(function() {
-        var mySwiper = new Swiper ('.swiper-container', {
+        var mySwiper = new Swiper ('.top-swiper', {
             // Optional parameters
             direction: 'vertical',
             loop: true,
-            pagination: '.swiper-pagination',
+            pagination: '.top-swiper-pagination',
             paginationClickable: true,
             autoplay: 50000,
             speed: 1000,
