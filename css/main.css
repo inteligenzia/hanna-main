@@ -499,8 +499,6 @@ slider-images begin
     border: 2px solid #c0945c;
 }
 
-
-
 /*==========Pagination for video slider begin =========*/
 
 .notebook-swiper-pagination {
@@ -540,7 +538,11 @@ slider-images begin
 /*==========Pagination for video slider end =========*/
 
 
-
+.music-player {
+    background-image: url("../img/songs.jpg");
+    background-size: cover;
+    height: 500px;
+}
 
 
 
