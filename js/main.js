@@ -1,5 +1,8 @@
 jQuery(document).ready(function($) {
     $(document).ready(function() {
+
+        // Swiper top slider
+
         var mySwiper = new Swiper ('.top-swiper', {
             // Optional parameters
             direction: 'vertical',
@@ -13,6 +16,8 @@ jQuery(document).ready(function($) {
             },
             onlyExternal: true
         });
+
+        // Swiper notebook slider
 
         var notebookSwiper = new Swiper ('.notebook-swiper', {
             // Optional parameters
@@ -36,14 +41,14 @@ jQuery(document).ready(function($) {
                 top: $(window).height()
             }
         });
-
-
     });
+
+    //Recalculate sticky
     $(window).on("resize", function(){
         $('#sticky').data('bs.affix').options.offset = $(window).height();
     });
 
-//Show or hide slider menu on desktop
+    //Show or hide slider menu on desktop
     $(window).scroll(function() {
         if ($(window).width() > 1340){
             if ($(this).scrollTop() > 80) {
@@ -54,6 +59,8 @@ jQuery(document).ready(function($) {
         }
     });
 
+    //Mobile menu interaction
+
     $("#hamburger").click(function() {
         $("#mobile-menu").css("width", "100%");
         $("#sticky").fadeOut("fast");
@@ -63,6 +70,8 @@ jQuery(document).ready(function($) {
         $("#mobile-menu").css("width", "0%");
         $("#sticky").fadeIn("fast" );
     });
+
+
 
     $(document).on('click', function (e) {
         if ($(e.target).closest("ul.language-switcher-locale-url").length === 0) {
