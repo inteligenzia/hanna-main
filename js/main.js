@@ -14,12 +14,29 @@ jQuery(document).ready(function($) {
             onlyExternal: true
         });
 
+        var notebookSwiper = new Swiper ('.notebook-swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            pagination: '.notebook-swiper-pagination',
+            paginationClickable: true,
+            autoplay: 50000,
+            speed: 1000,
+            paginationBulletRender: function (index, className) {
+                return '<span class="swiper-pagination-bullet"> 0' + (className + 1) + '.</span>';
+            },
+            onlyExternal: true,
+            nextButton: '.notebook-swiper-next',
+            prevButton: '.notebook-swiper-prev'
+        });
+
         //calculate when sticky menu should appear
         $('#sticky').affix({
             offset: {
                 top: $(window).height()
             }
         });
+
 
     });
     $(window).on("resize", function(){
