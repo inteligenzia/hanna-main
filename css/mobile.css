@@ -22,15 +22,13 @@
     }
 }
 
-
-
-@media  (min-width: 1010px) {
+@media  (min-width: 1210px) {
     .mobile-button {
         display: none;
     }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1210px) {
     .menu-center-part, .nav-slider {
         display: none;
     }
@@ -64,6 +62,42 @@
     }
     .art-header::after {
         right: -1.5em;
+    }
+
+    .notebook-swiper-next, .notebook-swiper-prev {
+        display: none;
+    }
+
+    .notebook-wrapper {
+        width: 90%;
+        height: 300px;
+        background-image: none;
+        padding: 0;
+    }
+
+    .notebook-swiper {
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .youtube-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .notebook-swiper-pagination {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .notebook-swiper-next {
+        right: 112px;
+    }
+
+    .notebook-swiper-prev {
+        left: 116px;
     }
 }
 
@@ -130,6 +164,7 @@
     width: 100%;
     background-color: #A88353;
 }
+
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}

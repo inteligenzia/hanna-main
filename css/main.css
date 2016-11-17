@@ -97,27 +97,37 @@ slider-images begin
 }
 
 .site-logo img {
-    width: 100%;
+    width: 95%;
     height: auto;
-
+    max-height: 55px;
 }
 
-.menu-center-part {
+.menu-center-part ul {
     float: left;
     width: 70%;
     text-align: center;
     margin: 0;
+    line-height: 70px;
 }
 
 .nav-slider ul {
+    line-height: 70px;
     width: 70%;
     text-align: center;
     margin:  0 auto;
+    float: none;
 }
 
-.menu-center-part li, .nav-slider ul li {
-    display: inline;
+.menu-center-part ul li, .nav-slider ul li {
+    display: inline-block;
     line-height: 70px;
+    float: none;
+}
+
+.menu-center-part ul li a, .nav-slider ul li a {
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
 }
 
 .menu-right-part {
@@ -144,7 +154,7 @@ slider-images begin
     left: -89px;
 }
 
-.nav-slider ul>li>a, .menu-center-part>li>a {
+.nav-slider ul>li>a, .menu-center-part ul>li>a {
     font-family: 'montserrathairline', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -152,7 +162,21 @@ slider-images begin
     margin: 0 15px;
 }
 
-.nav-slider ul>li>a:hover, .menu-center-part>li>a:hover {
+/* For drupal */
+#sticky .navbar-nav > .active > a, .nav-slider.navbar-inverse .navbar-nav > .active > a {
+    font-family: 'montserrathairline', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #8B8B8B;
+    margin: 0 15px;
+}
+
+.nav-slider.navbar-inverse .navbar-nav > .active > a:hover, .menu-center-part ul>li>a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-slider ul>li>a:hover, #sticky .menu-center-part ul>li>a:hover {
     color: #fff;
     text-decoration: none;
 }
@@ -178,7 +202,7 @@ slider-images begin
 
 /*Slider menu styles should be below main menu because slider menu uses some main menu styles */
 .nav-slider {
-    margin-top: -91px;
+    margin-top: -90px;
     background-color: rgba(0,0,0,0);
     border: none;
     z-index: 2; /*push above slider*/
@@ -323,7 +347,7 @@ slider-images begin
     content: "";
     display: block;
     height: 1px;
-    width: 105px;
+    width: 65px;
     background-color: #C0945C;
     position: absolute;
     bottom: 0.7em;
@@ -438,13 +462,18 @@ slider-images begin
     width: 924px;
     height: 500px;
     background-image: url("../img/notebook-image.png");
-    padding: 49px 0 0 9px;
+    padding: 49px 0 0 6px;
 }
 
 .notebook-swiper {
     width: 602px;
     height: 375px;
     margin: 0 auto;
+}
+
+.youtube-wrapper {
+    width: 602px;
+    height: 375px;
 }
 
 .notebook-swiper-next, .notebook-swiper-prev {
@@ -536,7 +565,6 @@ slider-images begin
 }
 
 /*==========Pagination for video slider end =========*/
-
 
 .music-player {
     background-image: url("../img/songs.jpg");

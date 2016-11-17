@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 
     //Show or hide slider menu on desktop
     $(window).scroll(function() {
-        if ($(window).width() > 1340){
+        if ($(window).width() > 1210){
             if ($(this).scrollTop() > 80) {
                 $('.nav-slider').fadeOut("slow");
             } else {
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
     });
 
 
-
+    //Language switcher logic
     $(document).on('click', function (e) {
         if ($(e.target).closest("ul.language-switcher-locale-url").length === 0) {
             $("ul.language-switcher-locale-url li:not(.active)").fadeOut("fast");
