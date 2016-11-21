@@ -316,11 +316,20 @@ slider-images begin
     font-size: 14px;
 }
 
+
 .article-header {
+    margin-bottom: 15px;
+}
+
+.article-header a{
     color: #000;
     font-weight: bold;
     font-size: 22px;
-    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.article-header a:hover {
+    text-decoration: underline;
 }
 
 .article-description {

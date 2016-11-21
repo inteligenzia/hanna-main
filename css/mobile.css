@@ -126,27 +126,38 @@
     margin-top: 5%; /* top margin to avoid conflict with the close button on smaller screens */
 }
 
-/* The navigation links inside the overlay */
-.overlay .mobile-menu-link, .overlay .mobile-social a {
-    padding: 8px;
+.overlay-content .menu.nav.navbar-nav {
+    float: none;
+}
+
+.overlay-content .menu.nav.navbar-nav li {
+    display: block;
+    float: none;
+}
+
+.overlay-content .menu.nav.navbar-nav li a {
+    padding: 25px;
     text-decoration: none;
     font-size: 28px;
     color: #F1D8B9;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    transition: 0.3s;
 }
 
+.overlay-content .menu.nav.navbar-nav li a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+
 .overlay .mobile-social a {
+    color: #F1D8B9;
     line-height: 80px;
     display: inline;
     font-size: 24px;
+    margin-left: 20px ;
 }
 
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
@@ -154,6 +165,13 @@
     top: -16px;
     left: 9px;
     font-size: 60px;
+    color: #F1D8B9;
+    transition: 0.3s;
+}
+
+.overlay .closebtn:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 .mobile-social {
