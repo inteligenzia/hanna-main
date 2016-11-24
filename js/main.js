@@ -35,6 +35,20 @@ jQuery(document).ready(function($) {
             prevButton: '.notebook-swiper-prev'
         });
 
+        var descriptionSwiper = new Swiper ('.desc-swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+            pagination: '.desc-swiper-pagination',
+            paginationClickable: true,
+            autoplay: 50000,
+            speed: 1000,
+            paginationBulletRender: function (index, className) {
+                return '<span class="swiper-pagination-bullet"> 0' + (className + 1) + '.</span>';
+            },
+            onlyExternal: true
+        });
+
         //calculate when sticky menu should appear
         $('#sticky').affix({
             offset: {

@@ -89,6 +89,10 @@
     .notebook-swiper-pagination {
         margin-top: 35px;
     }
+
+    .press-article:nth-child(2)  {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 1200px) {
