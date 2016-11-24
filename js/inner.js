@@ -18,8 +18,7 @@ jQuery(document).ready(function($) {
         $("#mobile-menu").css("width", "0%");
         $("#sticky").fadeIn("fast" );
     });
-
-
+    
     //Language switcher logic
     $(document).on('click', function (e) {
         if ($(e.target).closest("ul.language-switcher-locale-url").length === 0) {
@@ -38,7 +37,6 @@ jQuery(document).ready(function($) {
         } else {
             $(lang).fadeOut("fast");
         }
-
      });
 });
 
