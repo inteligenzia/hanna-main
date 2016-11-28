@@ -360,6 +360,11 @@ slider-images begin
     left: 165px;
 }
 
+.all-press-page .read-more {
+    float: left;
+}
+
+
 .news-article {
     margin-bottom: 20px;
 }
@@ -386,6 +391,7 @@ slider-images begin
     transition: all 0.3s ease 0s;
     display: inline-block;
     padding: 0 7%;
+    cursor: pointer;
 }
 
 .cta-link:hover, .cta-link.brown  {
@@ -766,4 +772,15 @@ slider-images begin
     position: absolute;
     left: 7%;
     top: 200px;
+}
+
+.all-press-page .press-article {
+    margin-bottom: 70px;
+}
+
+
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
