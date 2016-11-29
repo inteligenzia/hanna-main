@@ -71,6 +71,19 @@ jQuery(document).ready(function($) {
                 $('.nav-slider').fadeIn("slow");
             }
         }
+
+        if ($(this).scrollTop() > $(this).height()) {
+            $('#block-block-1').parallax({
+                imageSrc: './img/ab-bg.jpg',
+                speed: 0.6
+            });
+
+            $('#block-views-events-main-block-0').parallax({
+                imageSrc: './img/events-bg.jpg',
+                speed: 0.6
+            });
+        }
+
     });
 
     //Mobile menu interaction

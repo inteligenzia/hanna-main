@@ -778,9 +778,7 @@ slider-images begin
     margin-bottom: 70px;
 }
 
-
-
-.parallax-window {
+.parallax-window, #block-block-1 .wrap-about-me, #block-views-events-main-block-0  {
     min-height: 400px;
     background: transparent;
 }
