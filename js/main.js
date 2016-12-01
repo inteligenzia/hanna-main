@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
             loop: true,
             pagination: '.desc-swiper-pagination',
             paginationClickable: true,
-            autoplay: 50000,
+            autoplay: 5000000,
             speed: 1000,
             paginationBulletRender: function (index, className) {
                 return '<span class="swiper-pagination-bullet"> 0' + (className + 1) + '.</span>';

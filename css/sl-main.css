@@ -7,6 +7,7 @@ html, body {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -34,12 +35,12 @@ swiper + navigantion
     border-radius: 0;
 }
 
-.top-swiper-pagination .swiper-pagination-bullet-active{
+.top-swiper-pagination .swiper-pagination-bullet-active {
     color: #c0945c;
     background: none;
 }
 
-.top-swiper-pagination .swiper-pagination-bullet-active::before{
+.top-swiper-pagination .swiper-pagination-bullet-active::before {
     content: " ";
     display: block;
     height: 2px;
@@ -155,7 +156,6 @@ slider-images begin
 }
 
 .nav-slider ul>li>a, .menu-center-part ul>li>a {
-    font-family: 'montserrathairline', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     color: #8B8B8B;
@@ -164,7 +164,6 @@ slider-images begin
 
 /* For drupal */
 #sticky .navbar-nav > .active > a, .nav-slider.navbar-inverse .navbar-nav > .active > a {
-    font-family: 'montserrathairline', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     color: #8B8B8B;
@@ -252,8 +251,8 @@ slider-images begin
     margin-bottom: 70px;
 }
 
-.art-header, .block-title {
-    font-family: "Onyx", "Times New Roman", "serif";
+.art-header {
+    font-family: "PlayfairDisplayRegular", "Times New Roman", "serif";
     font-size: 68px;
     color: #000;
     text-transform: uppercase;
@@ -300,7 +299,6 @@ slider-images begin
 
 .full-width-wrapper {
     width: 100%;
-    background-color: lightslategray;
 }
 
 
@@ -347,17 +345,6 @@ slider-images begin
     background-color: #C0945C;
     color:  #efefef;
     text-decoration: none;
-}
-
-.read-more::after {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 65px;
-    background-color: #C0945C;
-    position: absolute;
-    bottom: 0.7em;
-    left: 165px;
 }
 
 .all-press-page .read-more {
@@ -439,8 +426,8 @@ slider-images begin
 
 
 .about-description h3 {
-    font-size: 48px;
-    font-family: "Onyx", "Times New Roman", "serif";
+    font-size: 36px;
+    font-family: "PlayfairDisplayRegular", "Times New Roman", "serif";
     color: #C0945C;
 }
 
@@ -451,21 +438,19 @@ slider-images begin
 
 .art-soprano::before, .art-soprano::after {
     content: "";
-    display: block;
     height: 1px;
-    width: 105px;
+    width: 12%;
     background-color: #949494;
-    position: absolute;
-    z-index: 1;
-    bottom: 23em;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .art-soprano::before {
-    left: 8em;
+    margin-right: 2%;
 }
 
 .art-soprano::after {
-    right: 8em;
+    margin-left: 2%;
 }
 
 
@@ -477,9 +462,9 @@ slider-images begin
 .notebook-wrapper {
     margin: 0 auto 170px;
     width: 924px;
-    height: 500px;
+    height: 475px;
     background-image: url("../img/notebook-image.png");
-    padding: 49px 0 0 6px;
+    padding: 31px 0 0 6px;
 }
 
 .notebook-swiper {
@@ -614,10 +599,55 @@ slider-images begin
     font-size: 16px;
     margin-bottom: 40px;
 }
+
 .desc-swiper {
     width: 100%;
-    height: 600px;
+    height: 890px;
 }
+
+.desc-slide .desc-left .left-img {
+    background-image: url("http://test10.perspective.net.ua/sites/default/files/styles/img-slide-960x960/public/desc-slides/desc-img1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 890px;
+}
+
+
+@media (max-width: 1600px) {
+    .desc-swiper {
+        height: 690px;
+    }
+    .desc-slide .desc-left .left-img {
+        height: 690px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .desc-swiper {
+        height: 1560px;
+    }
+    .desc-slide .desc-left {
+        height: 890px;
+    }
+    .desc-slide .desc-left .left-img {
+        height: 890px;
+    }
+
+    .desc-slide .desc-right {
+        height: 670px;
+    }
+}
+
+@media (max-width: 700px) {
+    .desc-swiper {
+        height: 1640px;
+    }
+    .desc-slide .desc-right {
+        height: 750px;
+    }
+}
+
 .desc-slide {
     overflow: hidden;
 }
@@ -761,7 +791,7 @@ slider-images begin
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    font-family: "Onyx", "Times New Roman", "serif";
+    font-family: "PlayfairDisplayRegular", "Times New Roman", "serif";
     font-size: 68px;
     text-transform: uppercase;
     min-width: 230px;
@@ -782,3 +812,46 @@ slider-images begin
     min-height: 400px;
     background: transparent;
 }
+
+
+/*Description slider*/
+
+
+
+.desc-swiper>.swiper-pagination-bullets {
+    font-size: 18px;
+    right: 88%;
+    top: 24%;
+
+}
+
+.desc-swiper>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 30px 0;
+}
+
+.desc-swiper-pagination .swiper-pagination-bullet {
+    color: #ffffff;
+    border-radius: 0;
+    right: 88%;
+    top: 15%;
+    height: 1px;
+    width: 1px;
+    opacity: 0.9;
+}
+
+.desc-swiper-pagination .swiper-pagination-bullet-active{
+    color: #c0945c;
+    background: none;
+}
+
+ .desc-swiper-pagination .swiper-pagination-bullet-active::after{
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 50px;
+    background-color: #c0945c;
+    position: relative;
+    top: -13px;
+    left: 40px;
+}
+
