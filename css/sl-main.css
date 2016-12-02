@@ -639,14 +639,6 @@ slider-images begin
     }
 }
 
-@media (max-width: 700px) {
-    .desc-swiper {
-        height: 1640px;
-    }
-    .desc-slide .desc-right {
-        height: 750px;
-    }
-}
 
 .desc-slide {
     overflow: hidden;
@@ -758,51 +750,6 @@ slider-images begin
 .events-main .table-striped > tbody > tr:nth-of-type(odd) {
     background-color: #f2f0f0;
 }
-#node-25 {
-    background: #f2f0f0;
-    padding-top: 7%;
-    padding-bottom: 7%;
-}
-.contacts {
-    background-color: #FFF;
-    background-position: top left -135px;
-    background-repeat: no-repeat;
-    padding-top: 7%;
-    padding-bottom: 7%;
-}
-@media (min-width: 1200px) {
-    .contacts { background-image: url("../img/contact-img-bg.jpg");	}
-}
-.cont-head {
-    float:left;
-    width:30%;
-}
-.cont-img {
-    float: right;
-    width: 70%;
-}
-.cont-img img {
-    width:100%;
-    height:auto;
-}
-.cont-head h2 {
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-    font-family: "PlayfairDisplayRegular", "Times New Roman", "serif";
-    font-size: 68px;
-    text-transform: uppercase;
-    min-width: 230px;
-    color: #FFF;
-}
-.art-name {
-    color: #FFF;
-    position: absolute;
-    left: 7%;
-    top: 200px;
-}
 
 .all-press-page .press-article {
     margin-bottom: 70px;
@@ -814,9 +761,7 @@ slider-images begin
 }
 
 
-/*Description slider*/
-
-
+/*=====Description slider begin=======*/
 
 .desc-swiper>.swiper-pagination-bullets {
     font-size: 18px;
@@ -855,3 +800,4 @@ slider-images begin
     left: 40px;
 }
 
+/*=====Description slider end=======*/
