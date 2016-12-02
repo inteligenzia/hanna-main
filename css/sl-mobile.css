@@ -44,9 +44,8 @@
 
     .desc-swiper>.swiper-pagination-bullets {
         font-size: 18px;
-        right: 46%;
+        right: 45%;
         top: 53%;
-
     }
 
     .desc-swiper>.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -122,8 +121,19 @@
     .desc-slide .desc-right {
         height: 750px;
     }
+
+    .desc-swiper>.swiper-pagination-bullets {
+        top: 45%;
+    }
 }
 
+
+@media (max-width: 615px) {
+    .desc-swiper>.swiper-pagination-bullets {
+        top: 50%;
+        right: 42%;
+    }
+}
 
 @media (max-width: 560px) {
     .desc-swiper {
@@ -140,6 +150,11 @@
     }
     .desc-slide .desc-right {
         height: 860px;
+    }
+
+    .desc-swiper>.swiper-pagination-bullets {
+        right: 38%;
+        top: 44%;
     }
 }
 
@@ -161,6 +176,11 @@
     }
     .desc-slide .desc-right {
         height: 1150px;
+    }
+
+    .desc-swiper>.swiper-pagination-bullets {
+        right: 35%;
+        top: 40%;
     }
 }
 
