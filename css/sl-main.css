@@ -56,7 +56,7 @@ slider-images begin
 =====*/
 
 .sl1 {
-    background-image: url("../img/hslide1.jpg");
+    background-image: url("../img/slider-production.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -209,15 +209,19 @@ slider-images begin
     z-index: 2; /*push above slider*/
 }
 
-.language-switcher-locale-url {
-    padding-right: 20px;
-    margin: 0;
+
+#block-locale-language {
+    float: left;
 }
 
+#block-locale-language ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
 
 .language-switcher-locale-url li {
     list-style: none;
-    text-align: right;
+    text-align: left;
     line-height: 70px;
 }
 
@@ -228,6 +232,13 @@ slider-images begin
 }
 
 .language-switcher-locale-url li:not(.active) {
+    background-color: #000000;
+    line-height: 40px;
+    display: none;
+}
+
+/*
+.language-switcher-locale-url li:not(.active) {
     width: 100px;
     position: absolute;
     background-color: #000000;
@@ -235,9 +246,8 @@ slider-images begin
     padding: 0 20px;
     right: -1px;
     display: none;
-
-
 }
+*/
 
 .language-switcher-locale-url li a {
     color: #8B8B8B;
@@ -253,7 +263,7 @@ slider-images begin
 
 .art-header {
     font-family: "PlayfairDisplayRegular", "Times New Roman", "serif";
-    font-size: 68px;
+    font-size: 54px;
     color: #000;
     text-transform: uppercase;
     text-align: center;
@@ -270,7 +280,7 @@ slider-images begin
     height: 2px;
     width: 105px;
     background-color: #C0945C;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
 }
 
 .art-header::before {
@@ -291,10 +301,11 @@ slider-images begin
 
 .featured-image a {
     display: block;
-    padding: 80px 0 0 80px;
+    padding: 10% 0 0 10%;
     background-image: url("../img/top-article-bg.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: 0 -12px;
+    /*background-size: contain;*/
 }
 
 .full-width-wrapper {
@@ -606,7 +617,6 @@ slider-images begin
 }
 
 .desc-slide .desc-left .left-img {
-    background-image: url("http://test10.perspective.net.ua/sites/default/files/styles/img-slide-960x960/public/desc-slides/desc-img1.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -678,9 +688,18 @@ slider-images begin
 }
 
 @media (max-width: 1199px) {
-    .ev-left { padding-right: 7%; }
+    .ev-left {
+        padding-right: 7%;
+    }
 }
-.ev-right img {	width:100%;}
+.ev-right img {
+
+    width:100%;
+    -webkit-box-shadow: 0px 0px 46px -3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 46px -3px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 46px -3px rgba(0,0,0,0.4);
+
+}
 .ev-wrapper .view-header, .ev-sm-wrapper .view-header  {
     height: 50px;
 }
@@ -708,7 +727,7 @@ slider-images begin
     display:block;
     background: #C0945C;
     color: #FFF;
-    padding:0 20px;
+    padding:0 13px;
     line-height: 33px;
     text-align:center;
     text-transform:uppercase;

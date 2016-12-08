@@ -55,6 +55,13 @@ jQuery(document).ready(function($) {
                 top: $(window).height()
             }
         });
+        
+        if (window.location.pathname.indexOf("/ru") >= 0) {
+
+            $(".language-switcher-locale-url li:eq(0)").before($(".language-switcher-locale-url li:eq(1)"));
+
+        }
+        
     });
 
     //Recalculate sticky
@@ -74,12 +81,12 @@ jQuery(document).ready(function($) {
 
         if ($(this).scrollTop() > $(this).height()) {
             $('#block-block-1').parallax({
-                imageSrc: './img/ab-bg.jpg',
+                imageSrc: '/sites/all/themes/hannasopr/img/ab-bg.jpg ',
                 speed: 0.6
             });
 
             $('#block-views-events-main-block-0').parallax({
-                imageSrc: './img/events-bg.jpg',
+                imageSrc: '/sites/all/themes/hannasopr/img/events-bg.jpg',
                 speed: 0.6
             });
         }

@@ -6,6 +6,11 @@ jQuery(document).ready(function($) {
                 top: 0
             }
         });
+
+        if (window.location.pathname.indexOf("/ru") >= 0) {
+            $(".language-switcher-locale-url li:eq(0)").before($(".language-switcher-locale-url li:eq(1)"));
+        }
+
     });
 
     //Mobile menu interaction
