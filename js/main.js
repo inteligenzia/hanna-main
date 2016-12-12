@@ -73,9 +73,9 @@ jQuery(document).ready(function($) {
     $(window).scroll(function() {
         if ($(window).width() > 1210){
             if ($(this).scrollTop() > 80) {
-                $('.nav-slider').fadeOut("slow");
+                $('.nav-slider').fadeOut("fast");
             } else {
-                $('.nav-slider').fadeIn("slow");
+                $('.nav-slider').fadeIn("fast");
             }
         }
 

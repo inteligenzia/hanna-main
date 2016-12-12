@@ -61,12 +61,12 @@ slider-images begin
     background-position: center;
 }
 .sl2 {
-    background-image: url("../img/hslide2.jpg");
+    background-image: url("../img/slider-production.jpg");
     background-size: cover;
     background-position: center;
 }
 .sl3 {
-    background-image: url("../img/hslide3.jpg");
+    background-image: url("../img/slider-production.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -211,12 +211,14 @@ slider-images begin
 
 
 #block-locale-language {
-    float: left;
+    float: right;
+    padding-right: 10px;
 }
 
 #block-locale-language ul {
     margin-bottom: 0;
     padding-left: 0;
+    width: 45px;
 }
 
 .language-switcher-locale-url li {

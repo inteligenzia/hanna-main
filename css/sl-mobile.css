@@ -181,9 +181,6 @@
 }
 
 @media (max-width: 500px) {
-    .language-switcher-locale-url li.active a:after {
-        display: none;
-    }
 
     .about-description {
         height: 650px;
