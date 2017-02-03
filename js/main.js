@@ -81,12 +81,12 @@ jQuery(document).ready(function($) {
 
         if ($(this).scrollTop() > $(this).height()) {
             $('#block-block-1').parallax({
-                imageSrc: '/sites/all/themes/hannasopr/img/ab-bg.jpg ',
+                imageSrc: './img/ab-bg.jpg ',
                 speed: 0.6
             });
 
             $('#block-views-events-main-block-0').parallax({
-                imageSrc: '/sites/all/themes/hannasopr/img/events-bg.jpg',
+                imageSrc: './img/events-bg.jpg',
                 speed: 0.6
             });
         }
